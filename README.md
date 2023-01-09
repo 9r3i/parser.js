@@ -76,7 +76,7 @@ Parameters:
 - ```query``` string of URL search query, without question mark
 
 ### parseQueryKey
-Parse query keys recusrsively.
+Parse query keys recursively.
 
 Parameters:
 - ```object``` object of default input
