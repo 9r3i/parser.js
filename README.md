@@ -36,6 +36,27 @@ console.log(parse.parseJSON({
 ```
 
 
+# Usage (Browser)
+
+### Install
+```html
+<script src="https://9r3i.github.io/parser/parser.js"></script>
+```
+
+### Usage
+```js
+let query="?test=testing&tos[satu]=tis&tos[dua][belas][lima]=dua-belas&tos[dua][puluh]=tes&trust=believe",
+url="/posting/pertama-kali.html"+query,
+parsed=parse.parseJSON({
+  parser:parse,
+  url:parse.parseURL(url),
+},9),
+pre=document.createElement('pre');
+document.body.appendChild(pre);
+pre.textContent=parsed;
+```
+
+
 # Methods
 
 ### parseURL
