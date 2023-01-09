@@ -17,12 +17,12 @@ Parse URL query into object, and parse object into readable JSON string
 # Usage (NodeJS)
 
 ### Install
-```
+```bash
 $ npm i @9r3i/parser
 ```
 
 ### Usage
-```
+```js
 const { parser }=require('@9r3i/parser');
 const parse=new parser;
 
