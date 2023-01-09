@@ -47,6 +47,7 @@ console.log(parse.parseJSON({
 ```js
 let query="?test=testing&tos[satu]=tis&tos[dua][belas][lima]=dua-belas&tos[dua][puluh]=tes&trust=believe",
 url="/posting/pertama-kali.html"+query,
+parse=new parser,
 parsed=parse.parseJSON({
   parser:parse,
   url:parse.parseURL(url),
