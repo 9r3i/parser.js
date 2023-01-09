@@ -5,7 +5,7 @@
 [![Stars](https://img.shields.io/github/stars/9r3i/parser.svg)](https://github.com/9r3i/parser/stargazers)
 [![Issues](https://img.shields.io/github/issues/9r3i/parser.svg)](https://github.com/9r3i/parser/issues)
 [![Release](https://img.shields.io/github/release/9r3i/parser.svg)](https://github.com/9r3i/parser/releases)
-[![Package](https://img.shields.io/npm/v/@9r3i/parser.svg?label=npm)](https://www.npmjs.com/package/parser)
+[![Package](https://img.shields.io/npm/v/@9r3i/parser.svg?label=npm)](https://www.npmjs.com/package/@9r3i/parser)
 [![Donate](https://img.shields.io/badge/donate-paypal-orange.svg)](https://paypal.me/9r3i)
 
 
