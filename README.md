@@ -11,7 +11,10 @@
 
 
 # parser
-Parse nesting URL query into object, and parse object into readable JSON string
+Parse nested URL query into object, and parse object into readable JSON string
+
+### Note
+This parses URL path and search query only, without protocol, hostname and hash
 
 
 # Usage (NodeJS)
@@ -61,19 +64,40 @@ pre.textContent=parsed;
 # Methods
 
 ### parseURL
-This parse a URL string only path and search, without protocol, hostname and hash.
+This parses a URL string only path and search query, without protocol, hostname and hash.
+
+Parameters:
+- ```url``` string of URL path and search query, without protocol, hostname and hash
 
 ### parseQuery
-Parse url query string of search without question mark.
+Parse nested URL query string of search query without question mark.
+
+Parameters:
+- ```query``` string of URL search query, without question mark
 
 ### parseQueryKey
 Parse query keys recusrsively.
 
+Parameters:
+- ```object``` object of default input
+- ```keys``` array of URL query keys
+- ```value``` mixed of object value to the target
+- ```counter``` int of counter; auto-generate, default: 0
+
 ### parseJSON
 Parse object into readable string JSON.
 
+Parameters:
+- ```object``` mixed of object
+- ```limit``` int of nested limit; default: 1
+- ```space``` int of space count between lines; initial: 0
+- ```pad``` int of padding white-space per lines; default: 2
+
 ### objectLength
 Calculate object length.
+
+Parameters:
+- ```object``` object of countable object
 
 
 # Closing
