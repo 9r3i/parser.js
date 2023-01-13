@@ -1,0 +1,26 @@
+{
+  "name": "@9r3i/parser",
+  "version": "1.1.2",
+  "description": "simple string parser",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parser",
+    "parse",
+    "json",
+    "query",
+    "url"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9r3i/parser.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "9r3i",
+  "license": "MIT",
+  "homepage": "https://github.com/9r3i/parser#readme"
+}
