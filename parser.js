@@ -6,7 +6,7 @@
  * started at january 8th 2023
  */
 function parser(){
-this.version='1.1.2';
+this.version='1.1.4';
 /* parse url path -- protocol and hostname are not included */
 this.parseURL=function(str){
   if(typeof str!=='string'){return false;}
@@ -23,7 +23,7 @@ this.parseURL=function(str){
 this.parseQuery=function(t){
   if(typeof t!=='string'){return false;}
   let s=t.split('&'),r={},c={};
-  for(var i=0;i<s.length;i++){
+  for(let i=0;i<s.length;i++){
     if(!s[i]||s[i]==''){continue;}
     let p=s[i].split('='),
     k=decodeURIComponent(p[0]),
