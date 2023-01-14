@@ -126,4 +126,4 @@ this.objectLength=function(obj){
 };
 };
 
-exports.parser=parser;
+//exports.parser=parser;
