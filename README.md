@@ -32,10 +32,40 @@ const parse=new parser;
 let query="?test=testing&tos[satu]=tis&tos[dua][belas][lima]=dua-belas&tos[dua][puluh]=tes&trust=believe",
 url="/posting/pertama-kali.html"+query;
 
-console.log(parse.parseJSON({
+console.log(parse.likeJSON({
   parser:parse,
   url:parse.parseURL(url),
 },9));
+```
+
+### Result
+```
+{
+    "parser": {
+        "version": "1.2.0",
+        "parseURL" : "[function]",
+        "parseQuery" : "[function]",
+        "parseQueryKey" : "[function]",
+        "parseJSON" : "[function]",
+        "objectLength" : "[function]"
+    },
+    "url": {
+        "path": "/posting/pertama-kali.html",
+        "query": {
+            "test": "testing",
+            "tos": {
+                "satu": "tis",
+                "dua": {
+                    "belas": {
+                        "lima": "dua-belas"
+                    },
+                    "puluh": "tes"
+                }
+            },
+            "trust": "believe"
+        }
+    }
+}
 ```
 
 
@@ -51,13 +81,43 @@ console.log(parse.parseJSON({
 let query="?test=testing&tos[satu]=tis&tos[dua][belas][lima]=dua-belas&tos[dua][puluh]=tes&trust=believe",
 url="/posting/pertama-kali.html"+query,
 parse=new parser,
-parsed=parse.parseJSON({
+parsed=parse.likeJSON({
   parser:parse,
   url:parse.parseURL(url),
 },9),
 pre=document.createElement('pre');
 document.body.appendChild(pre);
 pre.textContent=parsed;
+```
+
+### Result
+```
+{
+    "parser": {
+        "version": "1.2.0",
+        "parseURL" : "[function]",
+        "parseQuery" : "[function]",
+        "parseQueryKey" : "[function]",
+        "parseJSON" : "[function]",
+        "objectLength" : "[function]"
+    },
+    "url": {
+        "path": "/posting/pertama-kali.html",
+        "query": {
+            "test": "testing",
+            "tos": {
+                "satu": "tis",
+                "dua": {
+                    "belas": {
+                        "lima": "dua-belas"
+                    },
+                    "puluh": "tes"
+                }
+            },
+            "trust": "believe"
+        }
+    }
+}
 ```
 
 
@@ -84,7 +144,7 @@ Parameters:
 - ```value``` mixed of object value to the target
 - ```counter``` int of counter; auto-generate, default: 0
 
-### parseJSON
+### likeJSON
 Parse object into readable string JSON.
 
 Parameters:

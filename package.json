@@ -1,6 +1,6 @@
 {
   "name": "@9r3i/parser",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "simple string parser",
   "main": "parser.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "url": "git+https://github.com/9r3i/parser.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "author": "9r3i",
   "license": "MIT",

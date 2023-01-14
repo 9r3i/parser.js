@@ -6,7 +6,7 @@
  * started at january 8th 2023
  */
 function parser(){
-this.version='1.1.4';
+this.version='1.2.0';
 /* parse url path -- protocol and hostname are not included */
 this.parseURL=function(str){
   if(typeof str!=='string'){return false;}
@@ -54,8 +54,8 @@ this.parseQueryKey=function(obj,m,v,i){
   obj[mi]=this.parseQueryKey(obj[mi],m,v,i+1);
   return obj;
 };
-/* parse json to proper string */
-this.parseJSON=function(obj,limit,space,pad){
+/* like json, parse object into json string -- readable */
+this.likeJSON=function(obj,limit,space,pad){
   let rtext='';  
   space=space?parseInt(space,0xa):0x0;
   limit=limit?parseInt(limit,0xa):0x1;
@@ -78,7 +78,7 @@ this.parseJSON=function(obj,limit,space,pad){
             k=start==='{'?'"'+i+'": ':'';
         rtext+=(' ').repeat(pad*espace)+''+k+estart+'\r\n';
         if((espace/2)<limit){
-          rtext+=this.parseJSON(e,limit,espace,pad);
+          rtext+=this.likeJSON(e,limit,espace,pad);
         }else{
           rtext+=(' ').repeat(pad*(espace+2))
             +'[***LIMITED:'+limit+'***]\r\n';
