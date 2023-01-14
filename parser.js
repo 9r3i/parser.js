@@ -6,7 +6,7 @@
  * started at january 8th 2023
  */
 function parser(){
-this.version='1.2.0';
+this.version='1.2.1';
 /* parse url path -- protocol and hostname are not included */
 this.parseURL=function(str){
   if(typeof str!=='string'){return false;}
