@@ -1,6 +1,6 @@
 {
   "name": "@9r3i/parser",
-  "version": "1.2.1",
+  "version": "1.2.5",
   "description": "simple string parser",
   "main": "parser.js",
   "scripts": {
